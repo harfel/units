@@ -341,6 +341,7 @@ inject_metric_unit(globals(), 'coulomb', ampere*second            )
 inject_metric_unit(globals(), 'volt',    watt/ampere              )
 inject_metric_unit(globals(), 'farad',   coulomb/volt             )
 inject_metric_unit(globals(), 'ohm',     volt/ampere              )
+inject_metric_unit(globals(), 'carnot',  joule/kelvin             )
 
 # common units not officially sanctioned
 angstrom = 0.1*nanometer
@@ -348,7 +349,8 @@ dyne     = 1e-5*newton
 erg      = 100*nanojoule
 cal      = 4.184*joule
 kcal     = 1000*cal
-inject_metric_unit(globals(), 'bar',     1.e5*pascal )
+inject_metric_unit(globals(), 'bar',      1.e5*pascal )
+inject_metric_unit(globals(), 'clausius', kcal/kelvin )
 
 # non-metric units
 mile = 1.609344*kilometer
@@ -359,4 +361,3 @@ inch = 2.54*centimeter
 Avogadro  = 6.02214179e23/mol
 Boltzmann = 1.3806488e-23*joule/kelvin
 Planck    = 6.62606957e-34*joule*second
-
